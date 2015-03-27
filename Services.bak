@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Etalon Diagnostics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- Yahoo's Pure CDN (before stylesheets!) -->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <!-- Pure's responsive width control -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+      <!--div id="layout"-->
+        <div class="header">
+          <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading" href=""><img src="img/EDiags.jpg" width="232px" height="104px" alt="EDiags"></a>
+    
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li class="pure-menu-selected"><a href="Services.html">SERVICES</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Participate.html">PARTICIPATE</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="login-layout">
+          <div class="pure-menu services-menu pure-menu-open services-menu-open pure-menu-horizontal">
+            <ul>
+                <li class="login-menu-selected">
+                	<a href="Services.html"><img src="img/BMyA.jpg" width="39px" height="39px" alt="Profile">
+                    <img src="img/Bar.jpg" width="14px" height="39px" alt="B">MEMBERS</a>
+                </li>
+            </ul>
+          </div>
+          <div class="login-content">
+			<div id="layout">
+                <form name="LoginForm" class="pure-form login-form"
+                					action="SrvcsProfile.html" onsubmit="return validateForm()">
+                    <div class="login-img">
+	            		<a href=""><img src="img/Etalon.jpg" width="117px" height="73px" alt="Etalon"></a>
+                    </div>
+                    <fieldset>
+	                    <p class="login-form">	Username:<br>
+                        	<input type="text" name="user" placeholder="Username">
+                        </p>
+    	                <p class="login-form">	Password:<br>
+	                        <input type="password" name="pwd" placeholder="Password">
+                        </p>
+                        <p class="login-form">	<label for="remember">
+					            <input id="remember" type="checkbox"> Remember me
+					        </label>
+                        </p>
+                        <a href="">
+                        	<img src="img/Lock.jpg" width="12px" height="16px" alt="L">
+                    		Forgot your password?
+                        </a>
+						<br><br>
+	                   <button type="submit" 
+	                       class="pure-button pure-button-primary log-button login-button">LOGIN</button>
+	                   <button type="submit" 
+	                       class="pure-button pure-button-primary grad-button signup-button">SIGN UP</button>
+<!--                           
+                    	<a href="" class="pure-button pure-button-primary grad-button signup-button">SIGN UP</a>
+-->                        
+                    </fieldset>
+                </div>
+           
+            </div>
+
+          </div>
+        </div>
+
+      <!--/div-->
+          
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

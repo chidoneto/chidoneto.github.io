@@ -1,0 +1,914 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/************
+ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: black;
+}*/
+
+body {
+    background-image: url(../img/ImageBack.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-origin: border-box;*/
+    /*background-size: 100%;*/
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 40px;
+  /*width:1300px;
+  height:680px;*/
+    /*border: 10px solid transparent;
+    padding: 8px;*/
+}
+
+.bodydata{
+    border: 50px solid transparent;
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: double 15px rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.75);
+    background-clip: padding-box;
+}
+
+
+#image{
+  position:Relative;
+  margin:50px auto;
+  width:1300px;
+  height:720px;
+  background:"../img/ImageBack.jpg";
+  text-align:center;
+}
+
+/* ========== LAYOUT ========== */
+#layout {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.torso {
+    /*width: 95%;
+    padding-left: 10px;*/
+    padding-top: 104px;
+}
+
+.services-content {
+    /*width: 95%;*/
+    height: 450px;
+    margin-top: 50px;
+    padding-top: 45px;
+    /*padding-left: 20px;*/
+    background: rgba(255,255,255,1);
+    border: 1px #cccccc solid;
+    border-radius: 10px;
+    position:relative;
+    z-index: 2; 
+}
+
+.login-layout {
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    position: fixed; 
+    top: 23%;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0);
+    z-index: 2;     
+}
+
+.login-content {
+    height: 410px;
+    margin-top: 49px;
+    padding-left: 30px;
+    background: rgba(255,255,255,1);
+    border: 1px #cccccc solid;
+    border-radius: 10px;
+    position:relative;
+    z-index: 2; 
+
+}
+
+.login-img {
+    margin: 25px;
+    margin-bottom: 0px;
+    padding-left: 35px;
+}
+
+.login-form {
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+p.login-form {
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    padding-bottom: 5px;
+}
+
+/* ========== TOP MENU ========== */
+#menu1 {
+    float: right;
+}
+
+.home-menu ul {
+    float: right;
+    background: rgba(255,255,255,0.75);
+    font-family: georgia;
+    font-size: small;
+}
+
+.pure-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+}
+
+.pure-menu-heading {
+    position: fixed;
+    z-index: -1;
+}
+
+.pure-menu.pure-menu-open {
+    width: 90%;
+    z-index: 5;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border: 0;
+    background: rgba(255,255,255,0);
+}
+
+.pure-menu-selected {
+    color: white;
+    background: #214a70;
+    margin: 2px;
+    border: 1px;
+    border-color: black;
+    border-radius: 9px;
+}
+
+.pure-menu ul {
+    z-index: auto;
+}
+
+.home-menu li a {
+    padding: 5px 10px;
+}
+
+.login-menu-selected {
+    color: black;
+    background: white;
+    margin: 2px;
+    margin-left: 55px;
+    border-left: 1px #cccccc solid;
+    border-top: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+    border-radius: 10px;
+    position:relative;
+    z-index: 3;
+}
+
+/* ========== SERVICES MENU ========== */
+.services-menu li a {
+    padding: 10px 20px;
+    padding-left: 61px;
+    padding-right: 11px;
+}
+
+/*.pure-menu li a {
+    padding: 10px 10px;
+    padding-left: 60px;
+}*/
+
+.services-menu ul {
+    float: left;
+    background: rgba(255,255,255,0);
+    font-family: georgia;
+    font-size: smaller;
+    color: black;
+    width: 100%;
+}
+
+.services-menu.services-menu-open {
+    width: 98%;
+    
+}
+
+.services-menu.services-menu-open.services-menu-fixed {
+    border: 0;
+    background: rgba(255,255,255,0);
+}
+
+.services-menu-selected {
+    color: black;
+    background: white;
+    margin: 2px;
+    margin-left: 17px;
+    border-left: 1px #cccccc solid;
+    border-top: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+    border-radius: 7px;
+    padding-bottom: 20px;
+    position:relative;
+    z-index: 3;
+/*padding-left: 23px;*/
+/*width: 187px;*/
+text-align: center;
+
+}
+
+.services-menu-unselected {
+    color: black;
+    background: white;
+    /*margin: 2px;*/
+    margin-left: 17px;
+    border-left: 1px #cccccc solid;
+    border-top: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+    border-radius: 7px;
+    padding-bottom: 20px;
+    position:relative;
+    z-index: 1;
+}
+
+.services-menu-last {
+    margin-top: 5px;
+    float: right;
+}
+
+#srvcs-menu_img_bar {
+    left: 0px;
+    width: 2px;
+    height: 39px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: url(../img/SrvcsSprites.jpg) 0 0;
+    float: left;
+}
+
+#srvcs-menu_img_profile {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BPro.jpg), white;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 51px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_profileU {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BProU.jpg), -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: url(../img/Bar.jpg), url(../img/BProU.jpg), -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: url(../img/Bar.jpg), url(../img/BProU.jpg), -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: url(../img/Bar.jpg), url(../img/BProU.jpg), linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_profile a:hover, #srvcs-menu_img_profileU a:hover {
+    left: 0px;
+    background: url(../img/BarH.jpg), url(../img/BProH.jpg), #eeeeee;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 51px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_breed {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BBre.jpg), white;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 51px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_breedU {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BBreU.jpg), -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: url(../img/Bar.jpg), url(../img/BBreU.jpg), -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: url(../img/Bar.jpg), url(../img/BBreU.jpg), -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: url(../img/Bar.jpg), url(../img/BBreU.jpg), linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_breed a:hover, #srvcs-menu_img_breedU a:hover {
+    left: 0px;
+    background: url(../img/BarH.jpg), url(../img/BBreH.jpg), #eeeeee;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_test {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BTes.jpg), white;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_testU {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BTesU.jpg), -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: url(../img/Bar.jpg), url(../img/BTesU.jpg), -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: url(../img/Bar.jpg), url(../img/BTesU.jpg), -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: url(../img/Bar.jpg), url(../img/BTesU.jpg), linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_test a:hover, #srvcs-menu_img_testU a:hover {
+    left: 0px;
+    background: url(../img/BarH.jpg), url(../img/BTesH.jpg), #eeeeee;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_show {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BSho.jpg), white;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_showU {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BShoU.jpg), -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: url(../img/Bar.jpg), url(../img/BShoU.jpg), -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: url(../img/Bar.jpg), url(../img/BShoU.jpg), -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: url(../img/Bar.jpg), url(../img/BShoU.jpg), linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_show a:hover, #srvcs-menu_img_showU a:hover {
+    left: 0px;
+    background: url(../img/BarH.jpg), url(../img/BShoH.jpg), #eeeeee;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+#srvcs-menu_img_myaccnt {
+    left: 0px;
+    background: url(../img/Bar.jpg), url(../img/BMyA.jpg), white;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+    position: initial;
+}
+
+#srvcs-menu_img_myaccnt a:hover {
+    left: 0px;
+    background: url(../img/BarH.jpg), url(../img/BMyAH.jpg), #eeeeee;
+    background-size: 2px 39px, 39px 39px, 100% 100%;
+    background-position: 53px 5px, 7px 5px,  0 0;
+    background-repeat: no-repeat;
+}
+
+/* ========== CLIENT AREA ========== */
+.splash-container {
+    background: #852626;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash-cont {
+    overflow: hidden;
+    background: rgba(255,255,255,0.75);
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 40%;
+    height: 30%;
+    margin: auto;
+    position: absolute;
+    position: fixed; 
+    top: 100px; left: 0; bottom: 0; right: 0;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: double 15px rgba(255,255,255,0.7);
+    background-clip: padding-box;
+    font-family: opensans;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 30px;
+    font-weight: bold;
+    color: #852626;
+    border: 3px solid #852626;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 7px;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: #852626;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    border-radius: 10px;
+
+}
+
+.login-buttons {
+    margin: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.profile-u-1-5 {
+    width: 20%;
+}
+
+.profile-u-2-5 {
+    width: 40%;
+}
+
+.profile-img {
+    margin: 25px;
+    margin-bottom: 5px;
+    padding-left: 25px;
+}
+
+.profile-p {
+    margin: 0px;
+    padding: 3px;
+}
+
+.profile-buttons {
+    margin: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.profile-metrics {
+    margin: 10px;
+    margin-right: 20px;
+    padding: 0px;
+    padding-bottom: 15px;
+    border-left: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+    border-radius: 5px;
+}
+
+.profile-gauge {
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px #cccccc solid;
+}
+
+.profile-attributes {
+    margin: 10px;
+    padding: 0px;
+}
+
+.attributes-header {
+    margin: 10px;
+    padding: 0px;
+    font-family: georgia;
+    font-size: small;
+
+}
+
+.attributes-list {
+    margin: 5px;
+    padding: 10px;
+    height: 244px;
+    font-size: small;
+}
+
+.attr-font {
+    color: #852626;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 3px;
+}
+
+.login-button {
+    border-radius: 10px;
+
+}
+
+.signup-button {
+    height: 40px;
+    width: 110px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-size: smaller;
+}
+
+.gauge-button {
+    background: -webkit-linear-gradient(120deg, gray 2%, white 15%, gray 90%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(120deg, gray 2%, white 15%, gray 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(120deg, gray 2%, white 15%, gray 90%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(120deg, gray 2%, white 15%, gray 90%); /* Standard syntax (must be last) */
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: larger;
+    color: white;
+}
+
+.pure-button {
+    border-radius: 10px;
+
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+    background-color: #852626;
+    color: #fff;
+}
+
+.pure-menu .pure-menu-selected a {
+    color: #fff;
+}
+
+.pure-menu a, .pure-menu .pure-menu-can-have-children>li:after {
+    color: #214a70;
+}
+
+.grad-button {
+    background: -webkit-linear-gradient(#852626 5%, #cc6666 17%, #852626 76%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#852626 5%, #cc6666 17%, #852626 76%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#852626 5%, #cc6666 17%, #852626 76%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#852626 5%, #cc6666 17%, #852626 76%); /* Standard syntax (must be last) */
+    /*margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: smaller;*/
+margin: 5%;
+margin-left: 5%;
+margin-right: 5%;
+font-size: x-small;
+}
+
+.grad-menu {
+    background: -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+}
+
+.log-button {
+    height: 40px;
+    width: 110px;
+    background: -webkit-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* Standard syntax (must be last) */
+    font-size: smaller;
+}
+
+
+.logout-button {
+    height: 19px;
+    width: 110px;
+    background: -webkit-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#214a70 5%, #6699cc 17%, #214a70 76%); /* Standard syntax (must be last) */
+    font-size: smaller;
+}
+
+.attr-dropdown {
+    background: -webkit-linear-gradient(white 17%, #cccccc 76%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white 17%, #cccccc 76%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradientwhite 17%, #cccccc 76%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white 17%, #cccccc 76%); /* Standard syntax (must be last) */
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: smaller;
+    color: #852626;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
